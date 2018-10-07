@@ -22,6 +22,16 @@ import About from './components/about.vue'
 import Github from './components/github.vue'
 import config from './config.js'
 
+// 引入用户自定义网页标题
+if (config.title) {
+  window.document.title = config.docName
+  // 引入rel描述meta
+  document.head.innerHTML +=
+    `<meta \
+  name="description" \
+  content="${config.description || (config.header.name + (config.header.nickName ? `（${config.header.nickName}）` : '') + `的个人简历 - ${config.header.job}`)}">`
+}
+
 export default {
   name: 'resume',
   data: () => config,
@@ -79,7 +89,7 @@ export default {
   #content
     position relative
     background white
-    size 1024px 1430px
+    size 1024px 1530px
     margin 55px auto 100px
     border-radius 5px
     // overflow hidden
@@ -89,7 +99,6 @@ export default {
     #content
       border-radius 0
       margin 0
-      height 1447px
     .print-hide
       display none
     .print-show

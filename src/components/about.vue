@@ -1,6 +1,6 @@
 <template lang="pug">
-  a#about(href="https://github.com/coderming" target="_blank")
-    span @ CoderMing
+  a#about(href="https://github.com/stavyan" target="_blank")
+    span @ Stav Yan
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
   box-sizing border-box
   text-align center
   padding 0 10px
-  top 1476px
+  top 1576px
   left 50%
   margin-left -100px
   color #C8C8C8

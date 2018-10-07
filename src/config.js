@@ -1,28 +1,28 @@
 /**
- * 简历内容配置文件
- * @author CoderMing
- * https://github.com/coderming
- * 若想修改样式的配置参数，请修改同目录下的 config.styl 文件
+ *@des 简历内容配置文件
+ *@author stav stavyan@qq.com
+ *@blog https://stavtop.club
+ *@date 2018/10/07 19:54:56
  */
 const config = {
   /**
    * HTML页面的title
    * @param {[String]}
    */
-  docName: '简历 | 张德明',
+  docName: '简历 | 严淑刚',
   /**
    * 此处是针对SEO优化
    * 会在搜索引擎的摘要界面显示。
    * 默认值为: 张xx(小张)的个人简历 - 搬砖工程师
    * 即默认会展示你的姓名，昵称，职位字段
    */
-  description: '张德明（CoderMing）的个人简历 - Web前端工程师',
+  description: '严淑刚（Stav Yan）的个人简历 - Web前端工程师',
   /**
    * 生成PDF的默认文件名
    * 若不指定，默认为HTML页面的title去除空格后的结果
    * 此功能仅会在点击右下角打印按钮后触发
    */
-  printName: '张德明-前端-20届',
+  printName: '严淑刚-前端-18届',
   /**
    * 脚标栏
    * 网页显示的时候 将会显示在页面下方（非页面上）
@@ -32,9 +32,9 @@ const config = {
    * @param {[String]} 需要显示的内容
    */
   footer: {
-    left: '',
+    left: '<a href="https://github.com/stavyan/resume-201810" target="_blank">简历作品链接：https://github.com/stavyan/resume-201810</a>',
     right:
-      '<a href="https://coderming.com/resume" target="_blank">网页版简历（带作品链接）：coderming.com/resume</a>'
+      '<a href="https://www.stavtop.club/resume201810" target="_blank">网页版简历：https://www.stavtop.club/resume201810</a>'
   },
   /**
    * 顶部栏
@@ -42,19 +42,19 @@ const config = {
    * 不同的是，顶部栏不会出现在打印页面以及pad和手机端
    */
   title: {
-    left: '最后更新时间：2018年9月16日',
-    right: ''
+    left: '最后更新时间：2018年10月07日',
+    right: '<a href="https://stavtop.club" target="_blank">斯塔夫部落格</a>'
   },
   /**
    * 顶部栏的配置参数
    */
   header: {
     // 姓名
-    name: '张德明',
+    name: '严淑刚',
     // 昵称
     // 会显示在姓名的右方
     // 在pad和手机上不会显示
-    nickName: '',
+    nickName: 'stavyan',
     // 意向的工作
     // 建议不超过8个字
     job: 'Web前端开发工程师',
@@ -66,9 +66,9 @@ const config = {
      * 建议字数不超过15字
      */
     profiles: [
-      '男 / 2020年毕业',
-      '重庆邮电大学 · 计算机科学与技术',
-      '一年半前端学习经验 / 综合成绩前 10% (18/278)'
+      '男 / 2018年毕业',
+      '景德镇陶瓷大学 · 本科 · 计算机科学与技术',
+      '一年半前端学习经验 / 工作经验半年'
     ],
     /**
      * 信息栏
@@ -78,15 +78,13 @@ const config = {
      * address： 渲染出来的文本信息
      * 注意：请勿添加协议名，若添加，将会导致链接出错
      * type（可选）：icon的名称
-     * icon目前有以下几种： tell, blog, github, mail, qq, wechat
-     * 如果有更多的icon需求
-     * 请提issue
+     * icon目前有以下几种： tel, blog, github, email, qq, wechat
      */
     contacts: [
-      { address: 'coderming.com', type: 'blog' },
-      { address: 'github.com/coderming', type: 'github' },
-      { address: 'coderming@foxmail.com', type: 'mail' },
-      { address: '17323410086', type: 'tell' }
+      { address: '15083890039', type: 'tel' },
+      { address: 'stavyan@qq.com', type: 'email' },
+      { address: 'https://stavtop.club', type: 'blog' },
+      { address: 'https://github.com/stavyan', type: 'github' }
     ],
     /**
      * @param {[Boolean]} 是否显示微信二维码
@@ -127,8 +125,8 @@ const config = {
          * 由于HTML的解析特性，如果想同时显示多个空格，请使用&nbsp
          */
         {
-          left: '重庆邮电大学 · 红岩网校工作站',
-          right: '2017.6 至今',
+          left: '今明教育 · 前端开发工程师',
+          right: '2018.03 至今',
           showDot: false,
           blod: true
         },
@@ -140,8 +138,8 @@ const config = {
           showDot: true
         },
         {
-          left: '重庆邮电大学 · 计算机通信重点实验室',
-          right: '2017.1 - 2017.6',
+          left: '景德镇陶瓷大学 · 计算机通信重点实验室',
+          right: '2017.09 - 2018.03',
           showDot: false,
           blod: true
         },
@@ -159,10 +157,10 @@ const config = {
       title: '个人作品',
       content: [
         {
-          left: '掘金翻译计划 - 前端方向志愿者',
+          left: 'stav-zone - 基于 NodeJS + Pug + MongoDB 的博客系统',
           right:
-            '<a href="https://www.coderming.com/label/%E7%BF%BB%E8%AF%91" target="_blank">Link</a> ' +
-            '<a href="https://github.com/xitu/gold-miner" target="_blank">Source</a> ',
+            '<a href="https://stavtop.club" target="_blank">Link</a> ' +
+            '<a href="https://github.com/stavyan/stav-zone" target="_blank">Source</a> ',
           showDot: false,
           blod: true
         },
@@ -173,10 +171,10 @@ const config = {
           showDot: true
         },
         {
-          left: 'Blogsue - 基于 GitHub Issues 的博客系统',
+          left: 'vue-music - 基于 Vue2.x 的移动音乐播放器',
           right:
-            '<a href="https://coderming.com" target="_blank">Link</a> ' +
-            '<a href="https://github.com/coderming/blogsue" target="_blank">Source</a>',
+            '<a href="https://stavyan.github.io/vue-music-stav/dist/#/recommend" target="_blank">Link</a> ' +
+            '<a href="https://github.com/stavyan/vue-music-stav" target="_blank">Source</a>',
           showDot: false,
           blod: true
         },
@@ -188,8 +186,9 @@ const config = {
           showDot: true
         },
         {
-          left: 'StrongBox - 微信小游戏',
-          right: '<a href="https://github.com/RedrockTeam/xyx" target="_blank">Source</a>',
+          left: 'flask-movie-stav - Python+Flask+Mysql 开发微电影网站',
+          right: '<a href="http://132.232.19.246:5001/1/" target="_blank">Link</a> ' +
+            '<a href="https://github.com/stavyan/flask-movie-stav" target="_blank">Source</a>',
           showDot: false,
           blod: true
         },
@@ -202,9 +201,9 @@ const config = {
           showDot: true
         },
         {
-          left: '短链接生成API工具',
-          right:
-            '<a href="https://github.com/CoderMing/short-url-qrcode" target="_blank">Source</a> ',
+          left: 'stickyNotes - 基于原生JavaScript的随手便笺（单页面应用）',
+          right: '<a href="https://stavyan.github.io/stickyNotes/" target="_blank">Link</a> ' +
+            '<a href="https://github.com/stavyan/stickyNotes" target="_blank">Source</a> ',
           showDot: false,
           blod: true
         },
@@ -223,15 +222,15 @@ const config = {
         },
         {
           left:
-            '<a href="https://github.com/CoderMing/cqupt-class.widget" target="_blank">重邮课表 - Übersicht插件</a> ' +
+            '<a href="https://github.com/stavyan/spider-stav" target="_blank">基于Python Scrapy库的爬虫Demo</a> ' +
             '一个课表 Mac 桌面插件。具有课表显示、定时预报明日课表、缓存数据离线使用等功能。',
           right: '',
           showDot: true
         },
         {
           left:
-            '<a href="https://github.com/CoderMing/resume" target="_blank">HTML简历生成模版</a> ' +
-            'Vue 组件化开发，填写 config 即生成对应简历。进行了移动端适配、打印样式适配、配色自定义、代码语义化。（本简历就是一个 Demo）',
+            '<a href="https://github.com/stavyan/Android" target="_blank">基于Java 开发Android应用的Demo</a> ' +
+            'Vue 组件化开发，填写 config 即生成对应简历。',
           right: '',
           showDot: true
         }
@@ -260,8 +259,10 @@ const config = {
          * 由于HTML的解析特性，如果想同时显示多个空格，请使用&nbsp
          */
         {
-          left: '重庆邮电大学招生办公室 · 微信小程序',
-          right: '2017.6',
+          left: '基于Nodejs + postgresql的在线客服系统 · PC端网页',
+          right:
+          '<a href="https://github.com/CoderMing/Welcome2017" target="_blank">Source</a> ' +
+          '<a href="http://hongyan.cqupt.edu.cn/welcome/2017" target="_blank">Link</a> 2017.8',
           showDot: false,
           blod: true
         },
@@ -274,7 +275,7 @@ const config = {
           showDot: true
         },
         {
-          left: '重邮新生专题网 · PC端网页',
+          left: '基于Python Web的搜题系统 · 爬虫工具 + 搜题系统',
           right:
             '<a href="https://github.com/CoderMing/Welcome2017" target="_blank">Source</a> ' +
             '<a href="http://hongyan.cqupt.edu.cn/welcome/2017" target="_blank">Link</a> 2017.8',
@@ -289,6 +290,24 @@ const config = {
             '<strong>最终上线一个月UV<em>6k+</em>，PV<em>2w+</em>。',
           right: '',
           showDot: true
+        },
+
+        {
+          left: '在线考前辅导 · 微信小程序 + H5',
+          right:
+          '<a href="https://github.com/CoderMing/Welcome2017" target="_blank">Source</a> ' +
+          '<a href="http://hongyan.cqupt.edu.cn/welcome/2017" target="_blank">Link</a> 2017.8',
+          showDot: false,
+          blod: true
+        },
+        {
+          left:
+          '此项目是一年一版，拥有完整开发流程的桌面端页面。' +
+          '我为 2017 版负责人，负责技术选型和大体逻辑搭建。' +
+          '为了达到视觉的效果并保证性能，我大量使用了<em>CSS3</em>的特性并强制GPU渲染，同时在开发过程与产品视觉进行沟通，对界面进行了精细的优化。' +
+          '<strong>最终上线一个月UV<em>6k+</em>，PV<em>2w+</em>。',
+          right: '',
+          showDot: true
         }
       ]
     },
@@ -298,95 +317,100 @@ const config = {
       content: [
         {
           left:
-            '<b>熟练掌握基本技能。</b>熟悉<em>HTML5</em>、<em>CSS3</em>、<em>ES6+</em>、<em>正则</em>、<em>响应式布局</em>等，略懂<em>Canvas</em>。',
+            '<b>熟练掌握基本技能。</b>熟悉<em>HTML5</em>、<em>CSS</em>、<em>ES6</em>、<em>Vue前端框架</em>、<em>MpVue小程序框架</em>、<em>Pug</em>等，略懂<em>Canvas</em>、<em>Python的爬虫库</em>。',
           right: '',
           showDot: true
         },
         {
           left:
-            '<b>会使用各类工具，简单了解前端工程化。</b>写过<em>Webpack</em>、<em>Gulp</em>的插件。写过简单的前端自动化脚本。经常使用<em>Babel</em>、<em>CSS 预处理器 (Stylus)</em>、<em>Lint (Prettier)</em>，尝试使用（仅使用）过<em>模版引擎 (pug)</em>、<em>TypeScript</em>、<em>Docker</em>、<em>测试工具 (Jest)</em>。',
+            '<b>会使用各类工具，简单了解前端工程化。</b>尝试写过<em>Webpack</em>、<em>NPM</em>包。写过简单的前端自动化脚本。经常使用<em>模版引擎 (pug)</em>、<em>Docker</em>、<em>云服务器</em>。',
           right: '',
           showDot: true
         },
         {
           left:
-            '<b>了解基本的代码调试、优化、前端安全。</b>使用过性能监测工具，会使用<em>Chrome devTools</em>的基本功能，进行过代码优化。了解常见的前端安全隐患及简单的防备措施。',
+            '<b>了解基本的代码调试、优化、前端安全。</b>使用过性能监测工具，会使用<em>Chrome devTools</em>、<em>Vue.js devtools</em>的基本功能，进行过代码优化。了解常见的前端安全隐患及简单的防备措施。',
           right: '',
           showDot: true
         },
         {
           left:
-            '<b>简单了解后端的基础知识。</b>知道<em>HTTP(S) 协议</em>、<em>DNS 解析</em>相关基础知识，使用过<em>CDN</em>服务。写过入门级的<em>Shell 脚本</em>、配置过简单的<em>Nginx 服务器</em>，用过<em>NodeJS</em>、发布过<em>npm</em>包。',
+            '<b>了解后端的开发流程。</b>知道<em>HTTP(S) 协议</em>，配置过简单的<em>Nginx 服务器</em>，有<em>NodeJS</em>和Python Flask的开发经验、发布过<em>npm</em>包。',
           right: '',
           showDot: true
         },
         {
           left:
-            '<b>简单了解当下热门的框架，了解前端组件化。</b>看过<em>Underscore</em>的源码，简单了解<em>MV*</em>框架，了解<em>React</em>的基础知识和部分原理（也是目前主要学习方向）。简单地使用过<em>Vue</em>。',
+            '<b>早期有过Java开发Android的项目经验。</b>后在实习、工作过程中，使用<em>Python</em>写过爬虫和一些脚本。曾爬取<em>200 000+</em>的完整题库。脚本主要是批量操作数据库字段、数据较多的Excel和在特定网站对一些网页数据进行操作。',
           right: '',
           showDot: true
         },
         {
           left:
-            '<strong>非技术方面：</strong>喜欢看书（传记/纪实类）、喜欢旅行、日常健身 。经常在小团队中担任管理及决策者，喜欢与人交流，自认为有责任心。<b>对自己日后的发展有较明确的方向。</b>',
+            '<b>简单了解当下热门的框架，了解前端组件化。</b>看过<em>VueJS</em>的源码，了解<em>MV*</em>框架，有VueJS的项目开发经验，正在学习<em>React</em>的基础知识和部分原理。',
           right: '',
           showDot: true
         },
         {
           left:
-            '日常开发环境为 macOS、 VS Code，使用<em>Linux</em>、<em>Git</em>、<em>Markdown</em>，默认 Google。',
+            '<strong>非技术方面：</strong>喜欢看书（传记/历史类）、喜欢旅行。 曾在大学时期中担任过班长和社团会长，喜欢与人交流，自认为有责任心。<b>对自己日后的发展有较明确的方向。</b>',
           right: '',
           showDot: true
-        }
-      ]
-    },
-
-    {
-      title: '奖项证书',
-      content: [
-        // {
-        //   left: '奖项',
-        //   right: '',
-        //   showDot: false,
-        //   blod: true,
-        // },
-        {
-          left: '2018.5 &nbsp -&nbsp 蓝桥杯全国决赛C/C++ B组 · 优秀奖',
-          right: '国家级',
-          showDot: true,
-          blod: false
         },
         {
-          left: '2017.10 &nbsp-&nbsp 重庆邮电大学ACM校赛 · 二等奖',
-          right: '校级',
-          showDot: true,
-          blod: false
-        },
-        {
-          left: '重庆邮电大学单项奖学金 · 获得一次',
-          right: '校级',
-          showDot: true,
-          blod: false
-        },
-        {
-          left: '国家软件著作权证书',
-          right: '一份',
-          showDot: true,
-          blod: false
+          left:
+            '日常开发环境为 MacOS、 WebStorm、 PyCharm，使用<em>Linux</em>、<em>Git</em>、<em>Markdown</em>、 <em>GitHub</em>， 重度Google Chrome使用者。',
+          right: '',
+          showDot: true
         }
       ]
     }
-  ],
 
+    // {
+    //   title: '奖项证书',
+    //   content: [
+    //     // {
+    //     //   left: '奖项',
+    //     //   right: '',
+    //     //   showDot: false,
+    //     //   blod: true,
+    //     // },
+    //     {
+    //       left: '2018.5 &nbsp -&nbsp 蓝桥杯全国决赛C/C++ B组 · 优秀奖',
+    //       right: '国家级',
+    //       showDot: true,
+    //       blod: false
+    //     },
+    //     {
+    //       left: '2017.10 &nbsp-&nbsp 重庆邮电大学ACM校赛 · 二等奖',
+    //       right: '校级',
+    //       showDot: true,
+    //       blod: false
+    //     },
+    //     {
+    //       left: '重庆邮电大学单项奖学金 · 获得一次',
+    //       right: '校级',
+    //       showDot: true,
+    //       blod: false
+    //     },
+    //     {
+    //       left: '国家软件著作权证书',
+    //       right: '一份',
+    //       showDot: true,
+    //       blod: false
+    //     }
+    //   ]
+    // }
+  ],
   /**
    * 设定 Github Logo 地址
    * 若为空，则不显示
    * 此logo会在页面大小大于1440px时显示
    */
-  githubLogoLocation: 'https://github.com/coderming/resume',
+  githubLogoLocation: 'https://github.com/stavyan/resume-201810',
 
   /**
-   * 是否展示界面最下方 “@ CoderMing” 字样
+   * 是否展示界面最下方 “@ Stavyan” 字样
    * 如果你认为在个人的页面上显示此条消息不合适，可以通过此方法快速消除
    * 什么？你 star 没给也好意思注释这一条？？？ :(
    */
