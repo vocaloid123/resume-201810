@@ -3,7 +3,7 @@
     .qrcode(
       v-if="weChatQrCode"
       :class="!showWeChatQrCodeInHTML ? 'print-show' : ''")
-      img(src="../static/wechat.png")
+      img(src="https://stavyan.github.io/resume-201810/src/static/wechat.png")
     .tit-top
       h1.name {{name}}
       small.nick(v-if="nickName") {{nickName}}
