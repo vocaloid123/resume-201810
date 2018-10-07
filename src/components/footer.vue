@@ -29,7 +29,7 @@ export default {
   line-height 2em
   box-sizing border-box
   padding 0 10px
-  top 1540px
+  top 1440px
   color #C0C0C0
   span.pi-right
     float right

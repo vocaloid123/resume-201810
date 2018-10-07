@@ -89,7 +89,7 @@ export default {
   #content
     position relative
     background white
-    size 1024px 1530px
+    size 1024px 1430px
     margin 55px auto 100px
     border-radius 5px
     // overflow hidden

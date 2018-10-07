@@ -54,7 +54,7 @@ const config = {
     // 昵称
     // 会显示在姓名的右方
     // 在pad和手机上不会显示
-    nickName: 'stavyan',
+    nickName: 'Stav Yan',
     // 意向的工作
     // 建议不超过8个字
     job: 'Web前端开发工程师',
@@ -66,7 +66,7 @@ const config = {
      * 建议字数不超过15字
      */
     profiles: [
-      '男 / 2018年毕业',
+      '男 / 2018届毕业生',
       '景德镇陶瓷大学 · 本科 · 计算机科学与技术',
       '一年半前端学习经验 / 工作经验半年'
     ],
@@ -136,19 +136,6 @@ const config = {
             '我曾主持或参与开发5个完整项目，同时参与上线维护、重构代码、项目迁移/部署等任务。',
           right: '',
           showDot: true
-        },
-        {
-          left: '景德镇陶瓷大学 · 计算机通信重点实验室',
-          right: '2017.09 - 2018.03',
-          showDot: false,
-          blod: true
-        },
-        {
-          left:
-            '<strong>实验室成员</strong> 大一上和老师沟通加入的实验室。进入后参与开发前端4人后端10人的项目。使用<em>Git</em>进行版本控制，注重<em>代码可读性</em>。' +
-            '当时资历尚浅况且任务大多是修 bug，技术层面长进并不多，主要收获是对前端有了个更全面的认识，确定了自己的学习的路径，也简单了解了多人合作项目的开发流程与规范。',
-          right: '',
-          showDot: true
         }
       ]
     },
@@ -166,7 +153,7 @@ const config = {
         },
         {
           left:
-            '从2018年8月起，开始参与翻译社区内的英文文章。至今主持翻译文章 4 篇、参与校对 9 篇，内容涉及前端范围内的基础文档及前沿知识。学习知识贡献社区的同时也锻炼了英文阅读能力。',
+            '自2018年8月起，使用 NodeJS + Pug + MongoDB 搭建个人博客系统，并部署在自购服务器上，且为其解析域名配置Nginx服务器。期间在此写写博客或者收藏一些干货。在此次开发过程中，并收获了一定的全栈开发经验',
           right: '',
           showDot: true
         },
@@ -180,8 +167,10 @@ const config = {
         },
         {
           left:
-            '为了处理 Github Issues 做博客的诸多缺点（例如不能自定义界面）而开发的 SPA。数据源自自定义配置的 GitHub 仓库的 Issues。使用<em>React全家桶</em>和<em>Gitalk</em>。' +
-            '实现了移动端适配、黑夜模式、<em>PWA</em>、<em>Docker构建</em>、配置文件抽离等功能。收获了<em>React</em>的项目开发经验。（Demo 可以看我的博客）',
+            'VueJS是目前掌握程度较好且项目经验较多的一个前端框架。' +
+            '该项目基于Vue2.x与Vue全家桶开发的项目，数据接口皆来源于网络，实现了歌曲播放、歌曲搜索、歌曲排行等功能。' +
+            '由于是初学VueJS时的项目，在开发的过程也碰过许多坑，例如axios请求数据、项目打包等。' +
+            '也正是那些踩过的坑，才能使我们开发修行之路走得更稳更踏实。',
           right: '',
           showDot: true
         },
@@ -194,9 +183,9 @@ const config = {
         },
         {
           left:
-            '一个叠箱子的游戏。基于<em>原生 Canvas API</em>开发，自行设计了运行逻辑，实现了低耦合和可拓展。' +
-            '尝试着做<em>性能优化</em>、长宽比适配，中途针对性能和展示效果和产品视觉进行了很多沟通协调及权衡。在开发过程中同步更新踩坑文章。' +
-            '<strong>GitHub 上 60+ star、15+ watch，拥有软件著作权。</strong>同时让我熟悉了<em>性能调试</em>，并实践了部分<em>设计模式</em>（由于某些原因，项目已下线无法使用）。',
+            '为了学习Python Web，于是从轻量型的Flask框架下手，搭建了这个微电影网站。' +
+            '该项目属于前后端不分离项目，主要分为用户端、后台管理和服务端。' +
+            '期间踩过一些坑，学到了Python Web项目的整个开发流程，后续会继续完善网站的其他功能。',
           right: '',
           showDot: true
         },
@@ -209,8 +198,7 @@ const config = {
         },
         {
           left:
-            '为了学习<em>NodeJS</em>，制作了这个短链接生成 API。' +
-            '实现了短链接及其二维码的生成功能。期间踩了很多坑 (例如<em>CORS</em>)，学习到了一个简单的 NodeJS API 后台是怎么运行的。',
+            '基于原生JavaScript开发的一个可拖拽的便签（stickyNotes）练手小项目，实现了创建、移动标签，将创建的标签及内容缓存至本地等基础功能。',
           right: '',
           showDot: true
         },
@@ -222,16 +210,23 @@ const config = {
         },
         {
           left:
-            '<a href="https://github.com/stavyan/spider-stav" target="_blank">基于Python Scrapy库的爬虫Demo</a> ' +
-            '一个课表 Mac 桌面插件。具有课表显示、定时预报明日课表、缓存数据离线使用等功能。',
+            '<a href="https://github.com/stavyan/spider-stav" target="_blank">基于 Python Scrapy 库的爬虫Demo</a> ' +
+            '在使用 Python + Selenium + Chrome 进行自动化爬取数据的过程中存在问题，后在Python的学习中发现更加强大的爬虫库 Scrapy，于是有了以上几个爬虫小Demo。所以只能说学无止境，唯善学。',
           right: '',
           showDot: true
         },
         {
           left:
-            '<a href="https://github.com/stavyan/Android" target="_blank">基于Java 开发Android应用的Demo</a> ' +
-            'Vue 组件化开发，填写 config 即生成对应简历。',
+          '<a href="https://github.com/stavyan/Android" target="_blank">基于 Java 开发Android应用的Demo</a> ' +
+          '主要使用Java进行开发的几个Android应用，曾使用多个开源库和第三方SDK进行开发，毕设作品也在其中。',
           right: '',
+          showDot: true
+        },
+        {
+          left:
+          '<a href="https://github.com/stavyan/stav-gitbook" target="_blank">基于 gitbook 使用markdown写自己的第一本书</a><br/ >' +
+          '出于博客总结归纳的想法，于是找到了 GitBook，我想把它做为博客的备份。顺带学习了 GitBook用法，也开始了自己第一本书的编写。',
+          right: '<a href="https://www.stavtop.club/stavblog" target="_blank">Link</a>',
           showDot: true
         }
       ]
@@ -285,7 +280,6 @@ const config = {
         {
           left:
             '此项目是一年一版，拥有完整开发流程的桌面端页面。' +
-            '我为 2017 版负责人，负责技术选型和大体逻辑搭建。' +
             '为了达到视觉的效果并保证性能，我大量使用了<em>CSS3</em>的特性并强制GPU渲染，同时在开发过程与产品视觉进行沟通，对界面进行了精细的优化。' +
             '<strong>最终上线一个月UV<em>6k+</em>，PV<em>2w+</em>。',
           right: '',
@@ -304,7 +298,6 @@ const config = {
           left:
           '此项目是一年一版，拥有完整开发流程的桌面端页面。' +
           '我为 2017 版负责人，负责技术选型和大体逻辑搭建。' +
-          '为了达到视觉的效果并保证性能，我大量使用了<em>CSS3</em>的特性并强制GPU渲染，同时在开发过程与产品视觉进行沟通，对界面进行了精细的优化。' +
           '<strong>最终上线一个月UV<em>6k+</em>，PV<em>2w+</em>。',
           right: '',
           showDot: true
@@ -317,7 +310,7 @@ const config = {
       content: [
         {
           left:
-            '<b>熟练掌握基本技能。</b>熟悉<em>HTML5</em>、<em>CSS</em>、<em>ES6</em>、<em>Vue前端框架</em>、<em>MpVue小程序框架</em>、<em>Pug</em>等，略懂<em>Canvas</em>、<em>Python的爬虫库</em>。',
+            '<b>熟练掌握基本技能。</b>熟悉<em>HTML5</em>、<em>CSS</em>、<em>ES6</em>、<em>Vue前端框架</em>、<em>MpVue框架</em>、<em>Pug</em>等，略懂<em>Canvas</em>、<em>Python的爬虫库</em>。',
           right: '',
           showDot: true
         },
@@ -335,7 +328,7 @@ const config = {
         },
         {
           left:
-            '<b>了解后端的开发流程。</b>知道<em>HTTP(S) 协议</em>，配置过简单的<em>Nginx 服务器</em>，有<em>NodeJS</em>和Python Flask的开发经验、发布过<em>npm</em>包。',
+            '<b>了解后端的开发流程。</b>知道<em>HTTP(S) 协议</em>，配置过<em>Nginx 服务器</em>，有<em>NodeJS</em>和Python Flask的开发经验、发布过<em>npm</em>包。',
           right: '',
           showDot: true
         },
@@ -359,7 +352,7 @@ const config = {
         },
         {
           left:
-            '日常开发环境为 MacOS、 WebStorm、 PyCharm，使用<em>Linux</em>、<em>Git</em>、<em>Markdown</em>、 <em>GitHub</em>， 重度Google Chrome使用者。',
+            '日常开发环境为 MacOS、 WebStorm、 PyCharm，使用<em>Linux</em>、<em>GitHub</em>、<em>Markdown</em>、 <em>掘金</em>等开发者社区， 重度Google Chrome使用者。',
           right: '',
           showDot: true
         }
